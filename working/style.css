@@ -41,13 +41,18 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 24px;
 }
 
-header {
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 32px;
 }
 
 .text-logo {
