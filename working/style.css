@@ -74,17 +74,34 @@ header .social-icons {
 }
 
 /* Hero Section */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("./assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+
+    top: 133px;
+    right: 265px;
+
+    display: block;
+
+}
 
 .hero-section {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*place profile image im backgound*/
+
     background-image: url("./assets/images/image-profile-desktop.webp");
     background-repeat: no-repeat;
     background-size: 445px 720px;
     height: 720px;
     background-position: right;
+    z-index: -1;
 }
 
 .hero-section__text-content {
