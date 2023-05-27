@@ -102,6 +102,8 @@ header .social-icons {
     height: 720px;
     background-position: right;
     z-index: -1;
+
+    margin-bottom: 104px;
 }
 
 .hero-section::after {
@@ -178,13 +180,17 @@ button {
 /*Skills section*/
 
 .skills {
+    border-top: 1px solid white;
+    padding-top: 72px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 58px;
+    margin-bottom: 140px;
 }
 
 .heading-L {
     font-size: var(--48px);
     line-height: var(--56px);
     letter-spacing: -1.5px;
+    margin-bottom: 14px;
 }
