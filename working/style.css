@@ -1,3 +1,24 @@
+/* CSS Variables */
+:root {
+    /*Colors*/
+    --black: #151515;
+    --green: #4EE1A0;
+    --dark-grey: #242424;
+    --grey: #d9d9d9;
+    --white: #FFFFFF;
+
+    /*REM Conversions*/
+    --16px: 1rem; /* button/inputs font-size */
+    --18px: 1rem; /* paragraph font-size */
+    --24px: 1rem; /* heading M font-size  */
+    --26px: 1rem; /* button/inputs  line-height */
+    --28px: 1rem; /* paragraph line-height  */
+    --32px: 1rem; /* heading M line-height  */
+    --48px: 1rem; /* heading L font-size  */
+    --56px: 1rem; /* heading L line-height  */
+    --88px: 1rem; /* heading XL font-size and line-height*/
+}
+
 @font-face {
     font-family: 'Space Grotesk';
     src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
