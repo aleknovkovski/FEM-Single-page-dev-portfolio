@@ -74,13 +74,14 @@ header {
 }
 
 .hero-section__text-content {
-    width: 756px;
+    width: 706px;
 }
 
 .Heading-L {
     font-size: var(--88px);
     line-height: 100%;
     font-weight: 700;
+    letter-spacing: -2.5px;
 }
 
 p {
