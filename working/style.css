@@ -66,6 +66,9 @@ nav {
     gap: 32px;
 }
 
+header .social-icons {
+    margin-right: 30px;
+}
 .social-icons img {
     width: 24px;
 }
