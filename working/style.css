@@ -195,6 +195,12 @@ button {
     margin-bottom: 14px;
 }
 
+/*Projects area*/
+
+.projects-area {
+    margin-bottom: 139px;
+}
+
 .projects-area__header {
     display: flex;
     flex-direction: row;
@@ -220,4 +226,10 @@ button {
     line-height: var(--32px);
     text-transform: uppercase;
     margin-bottom: 7px;
+}
+
+/*Contact area*/
+
+.contact-area {
+    background: var(--dark-grey);
 }
