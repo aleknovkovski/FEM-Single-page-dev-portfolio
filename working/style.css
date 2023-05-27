@@ -104,6 +104,20 @@ header .social-icons {
     z-index: -1;
 }
 
+.hero-section::after {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+
+    background-image: url("./assets/images/pattern-circle.svg");
+
+    top: 521px;
+    right: 380px;
+
+    display: block;
+}
+
 .hero-section__text-content {
     width: 706px;
     display: flex;
