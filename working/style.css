@@ -13,7 +13,7 @@
     --24px: 1rem; /* heading M font-size  */
     --26px: 1rem; /* button/inputs  line-height */
     --28px: 1rem; /* paragraph line-height  */
-    --32px: 1rem; /* heading M line-height  */
+    --32px: 2rem; /* heading M line-height  */
     --48px: 1rem; /* heading L font-size  */
     --56px: 1rem; /* heading L line-height  */
     --88px: 1rem; /* heading XL font-size and line-height*/
@@ -35,4 +35,25 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-logo {
+    font-size: var(--32px);
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 32px;
+}
+
+.social-icons img {
+    width: 24px;
 }
