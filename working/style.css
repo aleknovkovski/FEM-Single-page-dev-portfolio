@@ -90,6 +90,10 @@ p {
     color: var(--grey);
 }
 
+.hero-section__description {
+    width: 385px; /* is 445px in Figma, but didn't match visually */
+}
+
 button {
     font-size: var(--16px);
     line-height: var(--26px);
