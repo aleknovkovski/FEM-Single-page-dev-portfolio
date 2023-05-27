@@ -128,7 +128,7 @@ header .social-icons {
     align-items: flex-start;
 }
 
-.Heading-L {
+.Heading-XL {
     font-size: var(--88px);
     line-height: 100%;
     font-weight: 700;
@@ -193,4 +193,31 @@ button {
     line-height: var(--56px);
     letter-spacing: -1.5px;
     margin-bottom: 14px;
+}
+
+.projects-area__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 69px;
+}
+
+.projects-grid__item__image {
+    width: 540px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.heading-M {
+    font-size: var(--24px);
+    line-height: var(--32px);
+    text-transform: uppercase;
+    margin-bottom: 7px;
 }
