@@ -65,6 +65,16 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /*place profile image im backgound*/
+    background-image: url("./assets/images/image-profile-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: 445px 720px;
+    height: 720px;
+    background-position: right;
+}
+
+.hero-section__text-content {
+    width: 756px;
 }
 
 .Heading-L {
@@ -77,11 +87,6 @@ p {
     font-size: var(--18px);
     line-height: var(--28px);
     color: var(--grey);
-}
-
-.profile-picture {
-    width: 445px;
-    height: 720px;
 }
 
 button {
