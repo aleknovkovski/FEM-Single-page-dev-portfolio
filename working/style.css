@@ -180,6 +180,7 @@ button {
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 58px;
 }
 
 .heading-L {
