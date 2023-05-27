@@ -16,7 +16,7 @@
     --32px: 2rem; /* heading M line-height  */
     --48px: 1rem; /* heading L font-size  */
     --56px: 1rem; /* heading L line-height  */
-    --88px: 1rem; /* heading XL font-size and line-height*/
+    --88px: 5.5rem; /* heading XL font-size and line-height*/
 }
 
 @font-face {
@@ -60,3 +60,42 @@ header {
 }
 
 /* Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Heading-L {
+    font-size: var(--88px);
+    line-height: 100%;
+    font-weight: 700;
+}
+
+p {
+    font-size: var(--18px);
+    line-height: var(--28px);
+    color: var(--grey);
+}
+
+.profile-picture {
+    width: 445px;
+    height: 720px;
+}
+
+button {
+    font-size: var(--16px);
+    line-height: var(--26px);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    padding: 0 0 10px;
+    border-bottom: 2px solid var(--green);
+    cursor: pointer;
+}
+
