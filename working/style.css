@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 700;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
