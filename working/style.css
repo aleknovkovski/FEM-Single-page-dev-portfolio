@@ -14,8 +14,8 @@
     --26px: 1rem; /* button/inputs  line-height */
     --28px: 1rem; /* paragraph line-height  */
     --32px: 2rem; /* heading M line-height  */
-    --48px: 1rem; /* heading L font-size  */
-    --56px: 1rem; /* heading L line-height  */
+    --48px: 3rem; /* heading L font-size  */
+    --56px: 3.5rem; /* heading L line-height  */
     --88px: 5.5rem; /* heading XL font-size and line-height*/
 }
 
@@ -175,3 +175,15 @@ button {
     cursor: pointer;
 }
 
+/*Skills section*/
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-L {
+    font-size: var(--48px);
+    line-height: var(--56px);
+    letter-spacing: -1.5px;
+}
