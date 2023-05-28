@@ -110,6 +110,13 @@ header nav {
     width: 20px;
 }
 
+.hero-section {
+    margin-bottom: 80px;
+}
+.hero-section__inner {
+    text-align: center;
+}
+
 .hero-section__image {
     width: 174px;
     height: 383px;
@@ -146,6 +153,10 @@ header nav {
 
         margin-bottom: 60px;
         overflow: clip;
+    }
+
+    .hero-section__inner {
+        text-align: left;
     }
 
     .hero-section__image {
@@ -604,6 +615,7 @@ button:hover {
         width: 445px;
         margin-bottom: 48px;
     }
+
     .contact-heading {
         margin-bottom: 36px;
     }
