@@ -170,6 +170,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    color: var(--green);
+}
+
 .underline {
     font-size: var(--16px);
     line-height: var(--26px);
