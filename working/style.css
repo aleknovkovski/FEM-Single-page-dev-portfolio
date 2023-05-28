@@ -39,6 +39,9 @@ body {
 }
 
 /* Header Related */
+.container {
+    margin: 20px;
+}
 
 .header {
     position: absolute;
@@ -563,7 +566,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 343px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -572,7 +575,7 @@ button:hover {
     }
 
     .contact-area__text-content {
-        width: 445px;
+        width: 100%;
     }
 
     .contact-form {
