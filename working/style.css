@@ -129,7 +129,7 @@ header .social-icons {
     background-image: url("./assets/images/pattern-rings.svg");
     background-repeat: no-repeat;
 
-    top: 133px;
+    top: 86px;
     right: 265px;
 
     display: block;
@@ -137,21 +137,25 @@ header .social-icons {
 }
 
 .hero-section {
+    background-image: url("./assets/images/image-profile-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: 322px 600px;
+    background-position: right;
+    height: 600px;
+
+    margin-bottom: 60px;
+}
+
+.hero-section__inner {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    background-image: url("./assets/images/image-profile-desktop.webp");
-    background-repeat: no-repeat;
-    background-size: 322px 600px;
-    height: 600px;
-    background-position: right;
-
-    margin-bottom: 104px;
+    height: 100%;
 }
 
-.hero-section::after {
+.hero-section__inner::after {
     content: "";
     position: absolute;
     width: 129px;
@@ -159,8 +163,8 @@ header .social-icons {
 
     background-image: url("./assets/images/pattern-circle.svg");
 
-    top: 521px;
-    right: 380px;
+    bottom: 0;
+    right: -85px;
 
     display: block;
 }
@@ -184,10 +188,18 @@ header .social-icons {
 @media (min-width: 1440px) {
     .hero-section {
         background-size: 445px 720px;
-            height: 720px;
+        height: 720px;
+        max-width: 1100px;
+        margin: 0 auto 104px; /* to same as container, plus spacing at bottom */
     }
+
+    .hero-section:before {
+        top: 133px;
+    }
+
     .hero-section__text-content {
         width: 706px;
+        justify-content: center;
     }
 
     .Heading-XL {
