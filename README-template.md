@@ -66,6 +66,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+- How to utilize CSS grid to create an "overlay modal" type of effect. This is seen when you hover on one of the projects. The on-hover makes an item take up the same grid-cells as another. In this case the same grid-cells as the image. That's how you get the overlay effect.
+- How to change the color of SVGs using a css-mask approach. In previous projects I had done it using CSS filters.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
