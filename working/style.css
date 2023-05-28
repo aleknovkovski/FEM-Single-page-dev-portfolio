@@ -189,6 +189,10 @@ button:hover {
     border-bottom: 2px solid var(--green);
 }
 
+.underline:hover {
+    color: var(--green);
+}
+
 /*Skills section*/
 
 .skills {
