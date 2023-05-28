@@ -124,6 +124,19 @@ header nav {
 }
 
 @media (min-width: 768px) {
+        .hero-section {
+        background-image: url("./assets/images/image-profile-tablet.webp");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: right;
+        height: 600px;
+
+        margin-bottom: 60px;
+        overflow: clip;
+    }
+}
+
+@media (min-width: 768px) {
     .container {
         max-width: 708px;
         margin: 0 auto;
@@ -142,17 +155,6 @@ header nav {
 
     header .social-icons {
         margin-right: 30px;
-    }
-
-    .hero-section {
-        background-image: url("./assets/images/image-profile-tablet.webp");
-        background-repeat: no-repeat;
-        background-size: 322px 600px;
-        background-position: right;
-        height: 600px;
-
-        margin-bottom: 60px;
-        overflow: clip;
     }
 
     .hero-section__inner {
