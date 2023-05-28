@@ -312,6 +312,8 @@ button {
 }
 
 .contact-form input, .contact-form textarea {
+    width: 100%;
+
     border: none;
     border-bottom: 1px solid var(--white);
     background-color: transparent;
@@ -342,4 +344,15 @@ textarea {
 
 .contact-form input:focus-visible:invalid, .contact-form textarea:focus-visible:invalid {
     border-bottom-color: red;
+}
+
+.contact-form__input-wrapper {
+    position: relative;
+}
+.invalid-input-icon {
+    width: 24px; height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 0 -50%;
 }
