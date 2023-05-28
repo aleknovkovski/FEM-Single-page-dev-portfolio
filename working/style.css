@@ -423,11 +423,10 @@ button:hover {
 
 .contact-area__inner {
     display: flex;
-    flex-direction: row;
-    gap: 220px;
-
-    padding-bottom: 92px;
+    flex-direction: column;
     border-bottom: 1px solid white;
+    align-items: center;
+    padding-bottom: 92px;
 }
 
 .contact-area__text-content {
@@ -443,6 +442,15 @@ button:hover {
     flex-direction: column;
     gap: 20px;
     width: 445px;
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-area__inner {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 92px;
+    }
 }
 
 .contact-form__submit-button {
