@@ -125,7 +125,7 @@ header .social-icons {
     right: 265px;
 
     display: block;
-
+    z-index: -1;
 }
 
 .hero-section {
@@ -139,7 +139,6 @@ header .social-icons {
     background-size: 445px 720px;
     height: 720px;
     background-position: right;
-    z-index: -1;
 
     margin-bottom: 104px;
 }
@@ -290,7 +289,7 @@ button:hover {
 }
 
 .projects-grid__item:hover .projects-grid__item__image {
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 .projects-grid__item:hover .projects-grid__item__links {
