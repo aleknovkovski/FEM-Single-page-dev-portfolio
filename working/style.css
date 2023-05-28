@@ -69,6 +69,7 @@ nav {
 header .social-icons {
     margin-right: 30px;
 }
+
 .social-icons img {
     width: 24px;
 }
@@ -137,18 +138,18 @@ header .social-icons {
 }
 
 .green-underline {
-  position: relative;
+    position: relative;
 }
 
 .green-underline::after {
-  content: '';
-  position: absolute;
-  bottom: 0.4rem;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background-color: var(--green);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: var(--green);
+    z-index: -1;
 }
 
 p {
@@ -224,15 +225,25 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
+    position: relative;
 }
 
-.projects-grid__item__image {
+.projects-grid__item__image-wrapper {
     position: relative;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 540px;
     height: 400px;
     margin-bottom: 20px;
+}
+
+.projects-grid__item__image {
+    width: 100%;
+    transition: opacity 400ms ease-in-out;
+}
+
+.projects-grid__item:hover .projects-grid__item__image {
+    opacity: 0.5;
 }
 
 .projects-grid__item__links {
