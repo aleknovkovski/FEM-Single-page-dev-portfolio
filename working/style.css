@@ -145,6 +145,7 @@ header .social-icons {
     height: 600px;
 
     margin-bottom: 60px;
+    overflow: clip;
 }
 
 .hero-section__inner {
