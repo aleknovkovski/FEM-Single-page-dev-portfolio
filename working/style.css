@@ -272,11 +272,11 @@ button:hover {
 
 .skills {
     border-top: 1px solid white;
-    padding-top: 72px;
+    padding-top: 52px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 58px;
-    margin-bottom: 140px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 52px;
+    margin-bottom: 100px;
 }
 
 .heading-L {
@@ -286,6 +286,16 @@ button:hover {
     margin-bottom: 14px;
 }
 
+@media screen and (min-width: 1440px) {
+    .skills {
+        padding-top: 72px;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 58px;
+
+        margin-bottom: 140px;
+    }
+}
 /*Projects area*/
 
 .projects-area {
