@@ -52,7 +52,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header nav {
     padding-top: 32px;
+}
+
+footer nav {
+    padding-top: 47px;
 }
 
 .text-logo {
@@ -294,14 +301,15 @@ button:hover {
 .contact-area {
     background: var(--dark-grey);
     padding-top: 84px;
-    padding-bottom: 92px;
-
 }
 
 .contact-area__inner {
     display: flex;
     flex-direction: row;
     gap: 220px;
+
+    padding-bottom: 92px;
+    border-bottom: 1px solid white;
 }
 
 .contact-area__text-content {
@@ -369,4 +377,11 @@ textarea {
 .contact-form input:focus-visible:invalid ~ .invalid-input-icon,
 .contact-form textarea:focus-visible:invalid ~ .invalid-input-icon {
     display: block;
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--dark-grey);
+    padding-bottom: 92px;
 }
