@@ -350,9 +350,15 @@ textarea {
     position: relative;
 }
 .invalid-input-icon {
+    display: none;
     width: 24px; height: 24px;
     position: absolute;
     top: 50%;
     right: 0;
     translate: 0 -50%;
+}
+
+.contact-form input:focus-visible:invalid ~ .invalid-input-icon,
+.contact-form textarea:focus-visible:invalid ~ .invalid-input-icon {
+    display: block;
 }
