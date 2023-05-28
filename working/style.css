@@ -195,6 +195,12 @@ header .social-icons {
 
     .hero-section:before {
         top: 133px;
+        right: 265px;
+    }
+
+    .hero-section__inner::after {
+        bottom: 70px;
+        right: 375px;
     }
 
     .hero-section__text-content {
