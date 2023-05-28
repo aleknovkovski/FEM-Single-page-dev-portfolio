@@ -436,6 +436,8 @@ button:hover {
     border-bottom: 1px solid white;
     align-items: center;
     padding-bottom: 92px;
+
+    text-align: center;
 }
 
 .contact-area__text-content {
@@ -459,6 +461,8 @@ button:hover {
         align-items: flex-start;
         justify-content: space-between;
         padding-bottom: 92px;
+
+        text-align: unset;
     }
 }
 
