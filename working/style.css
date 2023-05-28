@@ -61,7 +61,8 @@ header nav {
 }
 
 .social-icon {
-    width: 24px; height: 24px;
+    width: 24px;
+    height: 24px;
     background-color: white;
     mask-size: 24px 24px;
     -webkit-mask-size: 24px 24px;
@@ -182,7 +183,10 @@ header .social-icons {
     line-height: 100%;
     font-weight: 700;
     letter-spacing: -2px;
-    margin-bottom: 43px;
+}
+
+.hero-heading {
+    margin-bottom: 60px;
 }
 
 @media (min-width: 1440px) {
@@ -206,6 +210,10 @@ header .social-icons {
     .hero-section__text-content {
         width: 706px;
         justify-content: center;
+    }
+
+    .hero-heading {
+        margin-bottom: 43px;
     }
 
     .Heading-XL {
@@ -302,6 +310,7 @@ button:hover {
         margin-bottom: 140px;
     }
 }
+
 /*Projects area*/
 
 .projects-area {
@@ -313,6 +322,10 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.projects-heading {
+    margin-bottom: 60px;
 }
 
 .projects-grid {
@@ -339,9 +352,13 @@ button:hover {
 }
 
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
     .projects-area {
         margin-bottom: 139px;
+    }
+
+    .projects-heading {
+        margin-bottom: 80px;
     }
 
     .projects.grid {
@@ -417,6 +434,10 @@ button:hover {
     width: 445px;
 }
 
+.contact-heading {
+    margin-bottom: 36px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -466,9 +487,11 @@ textarea {
 .contact-form__input-wrapper {
     position: relative;
 }
+
 .invalid-input-icon {
     display: none;
-    width: 24px; height: 24px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 50%;
     right: 0;
