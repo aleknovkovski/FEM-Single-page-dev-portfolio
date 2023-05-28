@@ -163,18 +163,23 @@ p {
 }
 
 button {
+    border: none;
+    padding: 0 0 10px;
+
+    cursor: pointer;
+}
+
+.underline {
     font-size: var(--16px);
     line-height: var(--26px);
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
 
     color: var(--white);
     background-color: transparent;
-    border: none;
-    padding: 0 0 10px;
     border-bottom: 2px solid var(--green);
-    cursor: pointer;
 }
 
 /*Skills section*/
