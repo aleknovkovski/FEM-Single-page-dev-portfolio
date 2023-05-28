@@ -306,3 +306,24 @@ button {
     gap: 20px;
     width: 445px;
 }
+
+.contact-form__submit-button {
+    align-self: flex-end;
+}
+
+.contact-form input, .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--16px);
+    line-height: var(--26px);
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-top: 16px;
+}
