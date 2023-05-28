@@ -138,7 +138,7 @@ header nav {
     }
 
     .hero-section {
-        background-image: url("./assets/images/image-profile-desktop.webp");
+        background-image: url("./assets/images/image-profile-tablet.webp");
         background-repeat: no-repeat;
         background-size: 322px 600px;
         background-position: right;
@@ -276,6 +276,7 @@ header nav {
 
 @media (min-width: 1440px) {
     .hero-section {
+        background-image: url("./assets/images/image-profile-desktop.webp");
         background-size: 445px 720px;
         height: 720px;
         max-width: 1100px;
