@@ -326,4 +326,18 @@ button {
     padding-bottom: 16px;
     padding-left: 24px;
     padding-top: 16px;
+
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-form input:focus-visible, .contact-form textarea:focus-visible {
+    border-bottom-color: green;
+}
+
+.contact-form input:focus-visible:invalid, .contact-form textarea:focus-visible:invalid {
+    border-bottom-color: red;
 }
