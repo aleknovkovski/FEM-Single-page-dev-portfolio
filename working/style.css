@@ -584,7 +584,8 @@ button:hover {
 }
 
 .contact-area__text-content {
-    width: 343px;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .contact-heading {
@@ -599,12 +600,12 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
+    .contact-area__text-content {
+        width: 445px;
+        margin-bottom: 48px;
+    }
     .contact-heading {
         margin-bottom: 36px;
-    }
-
-    .contact-area__text-content {
-        width: 100%;
     }
 
     .contact-form {
@@ -623,6 +624,10 @@ button:hover {
         padding-bottom: 92px;
 
         text-align: unset;
+    }
+
+    .contact-area__text-content {
+        width: 445px;
     }
 }
 
