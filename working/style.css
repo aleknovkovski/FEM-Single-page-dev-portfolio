@@ -220,10 +220,28 @@ button {
     grid-row-gap: 69px;
 }
 
+.projects-grid__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
 .projects-grid__item__image {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     width: 540px;
     height: 400px;
     margin-bottom: 20px;
+}
+
+.projects-grid__item__links {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    z-index: 10;
+    transition: opacity 400ms ease-in-out;
 }
 
 .heading-M {
