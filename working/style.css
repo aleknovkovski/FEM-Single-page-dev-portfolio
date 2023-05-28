@@ -285,4 +285,24 @@ button {
 
 .contact-area {
     background: var(--dark-grey);
+    padding-top: 84px;
+    padding-bottom: 92px;
+
+}
+
+.contact-area__inner {
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+}
+
+.contact-area__text-content {
+    width: 445px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 445px;
 }
