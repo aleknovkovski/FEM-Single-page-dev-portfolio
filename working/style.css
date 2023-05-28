@@ -305,7 +305,7 @@ button:hover {
 /*Projects area*/
 
 .projects-area {
-    margin-bottom: 139px;
+    margin-bottom: 100px;
 }
 
 .projects-area__header {
@@ -318,8 +318,8 @@ button:hover {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 69px;
+    grid-column-gap: 22px;
+    grid-row-gap: 60px;
 }
 
 .projects-grid__item {
@@ -333,9 +333,26 @@ button:hover {
     position: relative;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 540px;
-    height: 400px;
+    width: 342px;
+    height: 253px;
     margin-bottom: 20px;
+}
+
+
+@media screen and (min-width:1440px) {
+    .projects-area {
+        margin-bottom: 139px;
+    }
+
+    .projects.grid {
+        grid-column-gap: 30px;
+        grid-row-gap: 69px;
+    }
+
+    .projects-grid__item__image-wrapper {
+        width: 540px;
+        height: 400px;
+    }
 }
 
 .projects-grid__item__image {
