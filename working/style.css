@@ -58,8 +58,38 @@ header nav {
     padding-top: 32px;
 }
 
-footer nav {
-    padding-top: 47px;
+.social-icon {
+    width: 24px; height: 24px;
+    background-color: white;
+    mask-size: 24px 24px;
+    -webkit-mask-size: 24px 24px;
+    transition: background-color 400ms ease-in-out;
+
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: var(--green);
+}
+
+.github-icon {
+    -webkit-mask-image: url('./assets/images/icon-github.svg');
+    mask-image: url('./assets/images/icon-github.svg');
+}
+
+.fem-icon {
+    -webkit-mask-image: url('./assets/images/icon-frontend-mentor.svg');
+    mask-image: url('./assets/images/icon-frontend-mentor.svg');
+}
+
+.linkedin-icon {
+    -webkit-mask-image: url('./assets/images/icon-linkedin.svg');
+    mask-image: url('./assets/images/icon-linkedin.svg');
+}
+
+.twitter-icon {
+    -webkit-mask-image: url('./assets/images/icon-twitter.svg');
+    mask-image: url('./assets/images/icon-twitter.svg');
 }
 
 .text-logo {
@@ -386,36 +416,6 @@ footer {
     padding-bottom: 92px;
 }
 
-.social-icon {
-    width: 24px; height: 24px;
-    background-color: white;
-    mask-size: 24px 24px;
-    -webkit-mask-size: 24px 24px;
-    transition: background-color 400ms ease-in-out;
-
-    cursor: pointer;
-}
-
-.social-icon:hover {
-    background-color: var(--green);
-}
-
-.github-icon {
-    -webkit-mask-image: url('./assets/images/icon-github.svg');
-    mask-image: url('./assets/images/icon-github.svg');
-}
-
-.fem-icon {
-    -webkit-mask-image: url('./assets/images/icon-frontend-mentor.svg');
-    mask-image: url('./assets/images/icon-frontend-mentor.svg');
-}
-
-.linkedin-icon {
-    -webkit-mask-image: url('./assets/images/icon-linkedin.svg');
-    mask-image: url('./assets/images/icon-linkedin.svg');
-}
-
-.twitter-icon {
-    -webkit-mask-image: url('./assets/images/icon-twitter.svg');
-    mask-image: url('./assets/images/icon-twitter.svg');
+footer nav {
+    padding-top: 47px;
 }
