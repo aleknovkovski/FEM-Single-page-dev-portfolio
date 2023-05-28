@@ -16,6 +16,7 @@
     --32px: 2rem; /* heading M line-height  */
     --48px: 3rem; /* heading L font-size  */
     --56px: 3.5rem; /* heading L line-height  */
+    --72px: 4.5rem; /* heading XL font-size on tablet  */
     --88px: 5.5rem; /* heading XL font-size and line-height*/
 }
 
@@ -46,6 +47,7 @@ body {
 .header {
     position: absolute;
     width: 100%;
+    z-index: 10;
 }
 
 nav {
@@ -142,8 +144,8 @@ header .social-icons {
 
     background-image: url("./assets/images/image-profile-desktop.webp");
     background-repeat: no-repeat;
-    background-size: 445px 720px;
-    height: 720px;
+    background-size: 322px 600px;
+    height: 600px;
     background-position: right;
 
     margin-bottom: 104px;
@@ -164,19 +166,38 @@ header .social-icons {
 }
 
 .hero-section__text-content {
-    width: 706px;
+    width: 445px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
 }
 
 .Heading-XL {
-    font-size: var(--88px);
+    font-size: 72px;
     line-height: 100%;
     font-weight: 700;
-    letter-spacing: -2.5px;
+    letter-spacing: -2px;
     margin-bottom: 43px;
+}
+
+@media (min-width: 1440px) {
+    .hero-section {
+        background-size: 445px 720px;
+            height: 720px;
+    }
+    .hero-section__text-content {
+        width: 706px;
+    }
+
+    .Heading-XL {
+        font-size: var(--88px);
+        letter-spacing: -2.5px;
+    }
+
+    .heading-break {
+        display: none; /* We use it to break sentence on tablet*/
+    }
 }
 
 .green-underline {
