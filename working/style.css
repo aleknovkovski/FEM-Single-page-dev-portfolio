@@ -40,7 +40,7 @@ body {
 
 /* Header Related */
 .container {
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .header {
@@ -56,13 +56,8 @@ nav {
     gap: 20px;
 }
 
-.hero-section__image {
-    width: 174px;
-    height: 383px;
-}
-
 header nav {
-    padding-top: 32px;
+    padding-top: 20px;
 }
 
 .social-icon {
@@ -115,6 +110,12 @@ header nav {
     width: 20px;
 }
 
+.hero-section__image {
+    width: 174px;
+    height: 383px;
+    margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
     .container {
         max-width: 708px;
@@ -126,6 +127,10 @@ header nav {
         align-items: center;
         flex-direction: row;
         gap: unset; /* needed for mobile only */
+    }
+
+    header nav {
+        padding-top: 32px;
     }
 
     header .social-icons {
@@ -195,11 +200,28 @@ header nav {
     height: 100%;
 }
 
+.hero-section__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
     .hero-section__inner {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+    }
+
+    .hero-section__text-content {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-section__inner {
+        align-items: center;
     }
 }
 
@@ -211,17 +233,10 @@ header nav {
 
     background-image: url("./assets/images/pattern-circle.svg");
 
-    bottom: 0;
+    top: 256px;
     right: -85px;
 
     display: block;
-}
-
-.hero-section__text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
 }
 
 .Heading-XL {
@@ -235,6 +250,10 @@ header nav {
     margin-bottom: 60px;
 }
 
+.heading-break__tablet {
+    display: none; /* We use it to break sentence on tablet*/
+}
+
 @media (min-width: 768px) {
     .hero-section__text-content {
         width: 445px;
@@ -243,6 +262,15 @@ header nav {
     .Heading-XL {
         font-size: 72px;
         letter-spacing: -2px;
+    }
+
+    .heading-break__tablet {
+        display: inline-block; /* We use it to break sentence on tablet*/
+    }
+
+    .hero-section__inner::after {
+        top: unset;
+        right: -110px;
     }
 }
 
@@ -285,7 +313,7 @@ header nav {
         letter-spacing: -2.5px;
     }
 
-    .heading-break {
+    .heading-break__tablet {
         display: none; /* We use it to break sentence on tablet*/
     }
 }
