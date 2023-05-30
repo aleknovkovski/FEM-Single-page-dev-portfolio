@@ -41,7 +41,7 @@ body {
 
 /* Header Related */
 .container {
-    margin: 0 20px;
+    margin: 0 1rem; /* ensures hero heading doesn't break on smaller screens */
 }
 
 .header {
