@@ -242,7 +242,8 @@ header nav {
 
 @media (min-width: 1440px) {
     .hero-section__inner {
-        align-items: center;
+        padding-top: 198px; /* to match figma on desktop; can't achieve w margin on nav, it's absolute */
+        align-items: flex-start;
     }
 }
 
@@ -324,8 +325,8 @@ header nav {
     }
 
     .hero-section:before {
-        background-position: left -100px top;
-        top: 93px;
+        background-position: left -40px top;
+        top: 138px;
         right: 0;
     }
 
