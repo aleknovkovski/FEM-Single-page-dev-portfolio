@@ -227,7 +227,8 @@ header nav {
     .hero-section__inner {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        padding-top: 135px;
+        /*align-items: flex-end;*/
     }
 
     .hero-section__text-content {
