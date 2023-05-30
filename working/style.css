@@ -195,10 +195,12 @@ header nav {
     height: 100%;
 
     background-image: url("./assets/images/pattern-rings.svg");
+    background-size: 530px;
+    background-position: left -140px top;
     background-repeat: no-repeat;
 
-    top: 86px;
-    right: 265px;
+    top: 126px;
+    right: 185px;
 
     display: block;
     z-index: -1;
