@@ -169,16 +169,15 @@ header nav {
 .hero-section::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 530px;
+    height: 129px;
 
     background-image: url("./assets/images/pattern-rings.svg");
     background-size: 530px;
-    background-position: left -140px top;
     background-repeat: no-repeat;
 
-    top: 126px;
-    right: 185px;
+    top: 124px;
+    left: -342px;
 
     display: block;
     z-index: -1;
@@ -225,16 +224,16 @@ header nav {
     .hero-section {
         background-image: url("./assets/images/image-profile-tablet.webp");
         background-repeat: no-repeat;
-        background-size: 30%;
+        background-size: 42.2%;
         background-position: right;
-        height: 600px;
+        /*height: 600px;*/
 
         margin-bottom: 60px;
     }
 
     .hero-section::before {
         top: 86px;
-        right: 128px;
+        left: -265px;
     }
 
     .hero-section__inner {
@@ -242,7 +241,7 @@ header nav {
 
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 135px;
+        padding-top: 151px;
         /*align-items: flex-end;*/
     }
 
@@ -383,7 +382,7 @@ p {
 
     .hero-section__description {
         width: 385px; /* is 445px in Figma, but didn't match visually */
-        margin-bottom: 66px;
+        margin-bottom: 34px;
     }
 }
 
