@@ -110,33 +110,6 @@ header nav {
     width: 20px;
 }
 
-.hero-section {
-    margin-bottom: 80px;
-    overflow: hidden;
-}
-
-.hero-section__inner {
-    text-align: center;
-}
-
-.hero-section__image {
-    width: 174px;
-    height: 383px;
-    margin-bottom: 40px;
-}
-
-@media (min-width: 768px) {
-    .hero-section {
-        background-image: url("./assets/images/image-profile-tablet.webp");
-        background-repeat: no-repeat;
-        background-size: 30%;
-        background-position: right;
-        height: 600px;
-
-        margin-bottom: 60px;
-    }
-}
-
 @media (min-width: 768px) {
     .container {
         max-width: 708px;
@@ -156,14 +129,6 @@ header nav {
 
     header .social-icons {
         margin-right: 30px;
-    }
-
-    .hero-section__inner {
-        text-align: left;
-    }
-
-    .hero-section__image {
-        display: none;
     }
 
     .text-logo {
@@ -188,6 +153,18 @@ header nav {
 }
 
 /* Hero Section */
+
+.hero-section {
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.hero-section__image {
+    width: 174px;
+    height: 383px;
+    margin-bottom: 40px;
+}
+
 .hero-section::before {
     content: "";
     position: absolute;
@@ -207,6 +184,8 @@ header nav {
 }
 
 .hero-section__inner {
+        text-align: center;
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -223,31 +202,6 @@ header nav {
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .hero-section__inner {
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 135px;
-        /*align-items: flex-end;*/
-    }
-
-    .hero-section__text-content {
-        align-items: flex-start;
-    }
-
-    .hero-section::before {
-        top: 86px;
-        right: 128px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .hero-section__inner {
-        padding-top: 198px; /* to match figma on desktop; can't achieve w margin on nav, it's absolute */
-        align-items: flex-start;
-    }
-}
-
 .hero-section__inner::after {
     content: "";
     position: absolute;
@@ -260,6 +214,81 @@ header nav {
     right: -85px;
 
     display: block;
+}
+
+@media (min-width: 768px) {
+    .hero-section__image {
+        display: none;
+    }
+
+    .hero-section {
+        background-image: url("./assets/images/image-profile-tablet.webp");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: right;
+        height: 600px;
+
+        margin-bottom: 60px;
+    }
+
+    .hero-section::before {
+        top: 86px;
+        right: 128px;
+    }
+
+    .hero-section__inner {
+        text-align: left;
+
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 135px;
+        /*align-items: flex-end;*/
+    }
+
+    .hero-section__text-content {
+        align-items: flex-start;
+        width: 445px;
+    }
+
+    .hero-section__inner::after {
+        top: unset;
+        right: -110px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-section {
+        background-image: url("./assets/images/image-profile-desktop.webp");
+        background-size: 445px 720px;
+        height: 720px;
+        max-width: 1100px;
+        margin: 0 auto 104px; /* to same as container, plus spacing at bottom */
+    }
+
+    .hero-section:before {
+        background-position: left -40px top;
+        top: 138px;
+        right: 0;
+    }
+
+    .hero-section__inner {
+        padding-top: 198px; /* to match figma on desktop; can't achieve w margin on nav, it's absolute */
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+
+        height: 100%;
+    }
+
+    .hero-section__text-content {
+        width: 706px;
+        justify-content: center;
+    }
+
+    .hero-section__inner::after {
+        bottom: 70px;
+        right: 375px;
+    }
 }
 
 .Heading-XL {
@@ -286,9 +315,6 @@ header nav {
 }
 
 @media (min-width: 768px) {
-    .hero-section__text-content {
-        width: 445px;
-    }
 
     .Heading-XL {
         font-size: 72px;
@@ -303,43 +329,11 @@ header nav {
         display: inline-block; /* We use it to break sentence on tablet*/
     }
 
-    .hero-section__inner::after {
-        top: unset;
-        right: -110px;
-    }
+
 }
 
 @media (min-width: 1440px) {
-    .hero-section {
-        background-image: url("./assets/images/image-profile-desktop.webp");
-        background-size: 445px 720px;
-        height: 720px;
-        max-width: 1100px;
-        margin: 0 auto 104px; /* to same as container, plus spacing at bottom */
-    }
 
-    .hero-section__inner {
-        flex-direction: row;
-        justify-content: space-between;
-
-        height: 100%;
-    }
-
-    .hero-section:before {
-        background-position: left -40px top;
-        top: 138px;
-        right: 0;
-    }
-
-    .hero-section__inner::after {
-        bottom: 70px;
-        right: 375px;
-    }
-
-    .hero-section__text-content {
-        width: 706px;
-        justify-content: center;
-    }
 
     .hero-heading {
         margin-bottom: 43px;
