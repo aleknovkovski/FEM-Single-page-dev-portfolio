@@ -264,8 +264,16 @@ header nav {
     margin-bottom: 60px;
 }
 
+.heading-break__mobile {
+    display: inline-block; /* We use it to break sentence on mobile*/
+}
+
 .heading-break__tablet {
     display: none; /* We use it to break sentence on tablet*/
+}
+
+.hero-section__description {
+    max-width: 343px;
 }
 
 @media (min-width: 768px) {
@@ -276,6 +284,10 @@ header nav {
     .Heading-XL {
         font-size: 72px;
         letter-spacing: -2px;
+    }
+
+    .heading-break__mobile {
+        display: none; /* We use it to break sentence on mobile*/
     }
 
     .heading-break__tablet {
