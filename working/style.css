@@ -126,7 +126,7 @@ header nav {
 }
 
 @media (min-width: 768px) {
-        .hero-section {
+    .hero-section {
         background-image: url("./assets/images/image-profile-tablet.webp");
         background-repeat: no-repeat;
         background-size: 30%;
@@ -233,6 +233,11 @@ header nav {
     .hero-section__text-content {
         align-items: flex-start;
     }
+
+    .hero-section::before {
+        top: 86px;
+        right: 128px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -319,8 +324,9 @@ header nav {
     }
 
     .hero-section:before {
-        top: 133px;
-        right: 265px;
+        background-position: left -100px top;
+        top: 93px;
+        right: 0;
     }
 
     .hero-section__inner::after {
