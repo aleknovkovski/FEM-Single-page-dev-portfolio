@@ -30,6 +30,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--black);
     color: var(--white);
+    overflow-x: hidden;
 }
 
 * {
@@ -156,7 +157,7 @@ header nav {
 
 .hero-section {
     margin-bottom: 80px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .hero-section__image {
@@ -465,6 +466,15 @@ button:hover {
         grid-row-gap: 58px;
 
         margin-bottom: 140px;
+
+        position: relative;
+    }
+
+    .skills-rings {
+        position: absolute;
+        bottom: -55px;
+        right: -440px;
+        z-index: 100;
     }
 }
 
