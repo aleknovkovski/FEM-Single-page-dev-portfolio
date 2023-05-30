@@ -185,7 +185,7 @@ header nav {
 }
 
 .hero-section__inner {
-        text-align: center;
+    text-align: center;
 
     position: relative;
     display: flex;
@@ -426,10 +426,20 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 24px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
+    margin-bottom: 80px;
 
     justify-items: center;
     text-align: center;
+    position: relative;
+}
+
+.skills-rings {
+    position: absolute;
+    bottom: -65px;
+    right: -358px;
+    z-index: 100;
 }
 
 .heading-L {
@@ -444,6 +454,9 @@ button:hover {
         padding-top: 52px;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 52px;
+
+        padding-bottom: unset; /* only needed for mobile */
+        border-bottom: unset; /* only needed for mobile */
         margin-bottom: 100px;
 
         justify-items: flex-start;
@@ -466,8 +479,6 @@ button:hover {
         grid-row-gap: 58px;
 
         margin-bottom: 140px;
-
-        position: relative;
     }
 
     .skills-rings {
